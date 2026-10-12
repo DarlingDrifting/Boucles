@@ -7,8 +7,13 @@ class Program
         /*
          * Consigne générale : faites un commit entre chaque étape !
          */
-        
+
         // Etape 1 : faire un compteur qui va de 1 à 10
+
+        for (int i = 0; i <= 10; i++)
+        {
+            Console.WriteLine(i);
+        }
         
         // Etape 2 : faire un décompte qui va de 5 à 1 puis qui dit "Bonne année !"
 
