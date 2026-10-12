@@ -10,12 +10,23 @@ class Program
 
         // Etape 1 : faire un compteur qui va de 1 à 10
 
-        for (int i = 0; i <= 10; i++)
+        for (int i = 1; i <= 10; i++)
         {
             Console.WriteLine(i);
+            Thread.Sleep(500);
         }
-        
+
         // Etape 2 : faire un décompte qui va de 5 à 1 puis qui dit "Bonne année !"
+
+        for (int i = 5; i >= 1; i--)
+        {
+            Console.WriteLine(i);
+            Thread.Sleep(500);
+            if (i == 1)
+            {
+                Console.WriteLine("Bonne année");
+            }
+        }
 
         // Etape 3 : faire un compteur qui va de -4 à 2
         
