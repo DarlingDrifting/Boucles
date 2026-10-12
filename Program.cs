@@ -48,9 +48,22 @@ class Program
                 Console.WriteLine(i);
             }
         }
-        
+
         // Etape 5 : faire une boucle qui se répète à chaque fois que l'utilisateur écrit autre chose que "oui"
         
+        string answer = "";
+
+        while (answer != "oui")
+        {
+            Console.WriteLine("Aimes-tu le cours de programmation ?");
+            answer = Console.ReadLine();
+            if (answer == "non")
+            {
+                Console.WriteLine("T'es sûr ??? Réessayes !");
+                Thread.Sleep(1000);
+            }
+        }
+
         /*
          * Après votre dernier commit, faites un push de votre projet pour qu'il soit accessible sur github.com
          */
