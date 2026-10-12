@@ -35,8 +35,19 @@ class Program
             Console.WriteLine(i);
             Thread.Sleep(500);
         }
-        
+
         // Etape 4 : faire un compteur qui compte 2 par 2 de 0 à 15
+
+        for (int i = 0; i <= 15; i++)
+        {
+            Console.WriteLine(i);
+            i++;
+            Thread.Sleep(500);
+            if (i == 15)
+            {
+                Console.WriteLine(i);
+            }
+        }
         
         // Etape 5 : faire une boucle qui se répète à chaque fois que l'utilisateur écrit autre chose que "oui"
         
